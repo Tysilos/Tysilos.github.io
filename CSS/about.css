@@ -336,6 +336,25 @@ nav .custom-font:hover {
         0 0 40px #39FF14,
         0 0 80px #39FF14,
         0 0 160px #39FF14;
+    animation: sway 2s linear infinite;
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-2px) rotate(-8deg);
+    }
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+    75% {
+        transform: translateX(2px) rotate(8deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
 }
 
 /* Certificates section */

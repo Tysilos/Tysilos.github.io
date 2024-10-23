@@ -263,12 +263,12 @@ nav .custom-font:hover {
 .circle {
     width: 1.5rem;
     height: 1.5rem;
-    background: #F7DF1E;
-    box-shadow: 0 0 10px #F7DF1E,
-        0 0 20px #F7DF1E,
-        0 0 40px #F7DF1E,
-        0 0 80px #F7DF1E,
-        0 0 160px #F7DF1E;
+    background: #39FF14;
+    box-shadow: 0 0 10px #39FF14,
+        0 0 20px #39FF14,
+        0 0 40px #39FF14,
+        0 0 80px #39FF14,
+        0 0 160px #39FF14;
     border-radius: 100%;
 }
 
@@ -278,13 +278,13 @@ nav .custom-font:hover {
     background: #fff;
 }
 
-.equalLight {
-    color: #F7DF1E;
-    text-shadow: 0 0 10px #F7DF1E,
-        0 0 20px #F7DF1E,
-        0 0 40px #F7DF1E,
-        0 0 80px #F7DF1E,
-        0 0 160px #F7DF1E;
+.fa-exclamation {
+    color: red;
+    text-shadow: 0 0 10px red,
+        0 0 20px red,
+        0 0 40px red,
+        0 0 80px red,
+        0 0 160px red;
     font-size: 1.2rem;
     vertical-align: middle;
 }

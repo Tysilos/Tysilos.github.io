@@ -317,6 +317,7 @@ nav .custom-font:hover {
 }
 
 .fa-briefcase {
+    font-size: 1.2rem;
     color: #39FF14;
     text-shadow: 0 0 10px #39FF14,
         0 0 20px #39FF14,

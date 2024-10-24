@@ -1,0 +1,139 @@
+nav {
+    border-bottom: 1px solid #00FFFF;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 40px #00FFFF,
+        0 0 80px #00FFFF,
+        0 0 160px #00FFFF;
+}
+
+nav .custom-font {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 40px #00FFFF,
+        0 0 80px #00FFFF,
+        0 0 160px #00FFFF;
+}
+
+nav .custom-font:hover {
+    color: #00FFFF;
+}
+
+/* Games section */
+.gameSection {
+    padding-top: 6rem;
+    background: #222;
+}
+
+/* Quiz section */
+.quizSection {
+    background: #222;
+}
+
+/* Footer */
+.fa-facebook {
+    color: #1877F2;
+    transition: 0.3s ease;
+}
+
+.fa-facebook:hover {
+    text-shadow: 0 0 1px #1877F2,
+        0 0 1px #1877F2,
+        0 0 1px #1877F2,
+        0 0 1px #1877F2,
+        0 0 35px #1877F2;
+}
+
+.fa-youtube {
+    color: #FF0000;
+    transition: 0.3s ease;
+}
+
+.fa-youtube:hover {
+    text-shadow: 0 0 1px #FF0000,
+        0 0 1px #FF0000,
+        0 0 1px #FF0000,
+        0 0 1px #FF0000,
+        0 0 40px #FF0000;
+}
+
+.fa-line {
+    color: #00B900;
+    transition: 0.3s ease;
+}
+
+.fa-line:hover {
+    text-shadow: 0 0 1px #00B900,
+        0 0 1px #00B900,
+        0 0 1px #00B900,
+        0 0 1px #00B900,
+        0 0 35px #00B900;
+}
+
+.fa-google {
+    color: #DB4437;
+    transition: 0.3s ease;
+}
+
+@keyframes color-change {
+    0% {
+        color: #DB4437;
+        text-shadow: 0 0 25px #DB4437;
+    }
+
+    25% {
+        color: #4285F4;
+        text-shadow: 0 0 25px #4285F4;
+    }
+
+    50% {
+        color: #FBBC05;
+        text-shadow: 0 0 25px #FBBC05;
+    }
+
+    75% {
+        color: #34A853;
+        text-shadow: 0 0 25px #34A853;
+    }
+
+    100% {
+        color: #DB4437;
+        text-shadow: 0 0 25px #DB4437;
+    }
+}
+
+.fa-google:hover {
+    animation: color-change 3s ease-in-out infinite;
+}
+
+.fa-github {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.fa-github:hover {
+    text-shadow: 0 0 25px #fff;
+}
+
+.fa-codepen {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.fa-codepen:hover {
+    text-shadow: 0 0 25px #fff;
+}

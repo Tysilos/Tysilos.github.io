@@ -253,7 +253,6 @@ nav .custom-font:hover {
 
 .social-link {
     font-size: 2rem;
-    text-decoration: none;
 }
 
 .fa-phone {
@@ -398,4 +397,14 @@ nav .custom-font:hover {
 
 .fa-codepen:hover {
     text-shadow: 0 0 25px #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .social-link {
+        font-size: 1.5rem;
+    }
+
+    .social-link img {
+        width: 25%;
+    }
 }

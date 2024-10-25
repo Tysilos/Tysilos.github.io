@@ -112,12 +112,8 @@ nav .custom-font:hover {
 
 .heroBtn1 i {
     padding: 1.5rem 2rem;
-    background: transparent;
-    text-decoration: none;
     color: #39FF14;
-    text-transform: uppercase;
     transition: 0.3s ease;
-    letter-spacing: 2px;
     position: relative;
     z-index: 3;
     animation: moveDown 1s infinite;
@@ -139,7 +135,6 @@ nav .custom-font:hover {
 
 .heroBtn1 i:hover {
     color: #39FF14;
-    transform: scale(1.2);
     text-shadow: 0 0 10px #39FF14,
         0 0 20px #39FF14,
         0 0 40px #39FF14,

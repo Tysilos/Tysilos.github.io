@@ -1,0 +1,111 @@
+.ox-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+.ox-header {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff,
+        0 0 160px #fff;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.win-message {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.win-message.win {
+    color: #39FF14;
+    text-shadow: 0 0 10px #39FF14,
+        0 0 20px #39FF14,
+        0 0 40px #39FF14,
+        0 0 80px #39FF14,
+        0 0 160px #39FF14;
+}
+
+.win-message.lose {
+    color: red;
+    text-shadow: 0 0 50px red,
+        0 0 60px red,
+        0 0 70px red,
+        0 0 80px red,
+        0 0 160px red;
+    font-size: 3rem;
+}
+
+.win-message.draw {
+    color: #F7DF1E;
+    text-shadow: 0 0 10px #F7DF1E,
+        0 0 20px #F7DF1E,
+        0 0 40px #F7DF1E,
+        0 0 80px #F7DF1E,
+        0 0 160px #F7DF1E;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 1px;
+    margin: 3rem 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.cell.X {
+    color: #007BFF;
+    text-shadow: 0 0 10px #007BFF,
+        0 0 20px #007BFF,
+        0 0 40px #007BFF,
+        0 0 80px #007BFF,
+        0 0 160px #007BFF;
+    font-size: 3rem;
+}
+
+.cell.O {
+    color: red;
+    text-shadow: 0 0 50px red,
+        0 0 60px red,
+        0 0 70px red,
+        0 0 80px red,
+        0 0 160px red;
+    font-size: 3rem;
+}
+
+.custom-btn {
+    background: transparent;
+    border: 3px solid red;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+    background: red;
+    box-shadow: 0 0 10px red,
+        0 0 20px red,
+        0 0 40px red,
+        0 0 80px red,
+        0 0 160px red;
+}

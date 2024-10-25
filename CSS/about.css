@@ -112,12 +112,8 @@ nav .custom-font:hover {
 
 .heroBtn1 i {
     padding: 1.5rem 2rem;
-    background: transparent;
-    text-decoration: none;
     color: #39FF14;
-    text-transform: uppercase;
     transition: 0.3s ease;
-    letter-spacing: 2px;
     position: relative;
     z-index: 3;
     animation: moveDown 1s infinite;
@@ -145,6 +141,7 @@ nav .custom-font:hover {
         0 0 40px #39FF14,
         0 0 80px #39FF14,
         0 0 160px #39FF14;
+    transform: scale(1.2);
 }
 
 .fa-html5 {
@@ -328,9 +325,12 @@ nav .custom-font:hover {
 }
 
 @keyframes blink {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.1;
     }

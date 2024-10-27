@@ -39,8 +39,6 @@ nav .custom-font:hover {
     color: #00FFFF;
 }
 
-
-
 /* Games section */
 .gameSection {
     padding-top: 6rem;
@@ -53,7 +51,7 @@ nav .custom-font:hover {
 }
 
 .gameImage img:hover {
-    transform: scale(1.2);
+    transform: translateY(-10px);
     box-shadow: 0 0 15px #00FFFF;
 }
 

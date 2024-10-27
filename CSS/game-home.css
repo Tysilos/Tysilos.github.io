@@ -47,6 +47,16 @@ nav .custom-font:hover {
     background: #222;
 }
 
+.gameImage img {
+    box-shadow: 0 0 5px #fff;
+    transition: 0.3s ease;
+}
+
+.gameImage img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #00FFFF;
+}
+
 .coming-soon {
     color: #fff;
     text-shadow: 0 0 3px red,

@@ -121,27 +121,25 @@ nav .custom-font:hover {
 
 @keyframes moveDown {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(10px) scale(1);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
 .heroBtn1 i:hover {
     color: #39FF14;
-    transform: scale(1.2);
     text-shadow: 0 0 10px #39FF14,
         0 0 20px #39FF14,
         0 0 40px #39FF14,
         0 0 80px #39FF14,
         0 0 160px #39FF14;
-    transform: scale(1.2);
 }
 
 .fa-html5 {

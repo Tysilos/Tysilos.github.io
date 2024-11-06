@@ -95,21 +95,6 @@ nav .custom-font:hover {
     box-shadow: 0 0 80px #007bff;
 }
 
-.changeLanguage:hover {
-    text-shadow: 0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 40px #fff,
-        0 0 80px #fff,
-        0 0 160px #fff;
-    transform: scale(1.2);
-    background: #007bff;    
-    box-shadow: 0 0 10px #007bff,
-    0 0 20px #007bff,
-    0 0 40px #007bff,
-    0 0 80px #007bff,
-    0 0 160px #007bff;
-}
-
 /* Hero section */
 .heroSection {
     display: flex;

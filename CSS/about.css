@@ -79,6 +79,37 @@ nav .custom-font:hover {
     color: #39FF14;
 }
 
+.changeLanguage {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;   
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.changeLanguage:hover {
+    box-shadow: 0 0 10px #007bff,
+        0 0 20px #007bff,
+        0 0 40px #007bff,
+        0 0 80px #007bff,
+        0 0 160px #007bff;
+}
+
+@media only screen and (max-width: 814px) {
+    .changeLanguage {
+        bottom: 50px;
+        right: 20px;   
+    }
+}
+
 /* Hero section */
 .heroSection {
     display: flex;

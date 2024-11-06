@@ -69,16 +69,26 @@
     </nav>
     <!-- End Navigation bar -->
 
+    <!-- Translate -->
+    <button class="changeLanguage" onclick="toggleLanguage()">
+        <i class="fa-solid fa-language"></i>
+        TH/ENG
+    </button>
+
     <!-- Hero section -->
     <section class="heroSection text-center bg-dark pt-5" id="home">
         <div class="px-4 pt-5 my-5 container">
             <h1 class="display-1 fw-bold"><i class="fa-solid fa-address-card"></i></h1>
             <h1 class="display-1 fw-bold heroH1">About Me</h1>
             <div class="mx-auto">
-                <p class="lead mb-5 mt-5">พร้อมที่จะพัฒนาเว็บไซต์ให้กับคุณด้วยความรู้ใน HTML, CSS, JavaScript, Bootstrap
+                <p class="lead mb-5 mt-5" id="heroDescThai">พร้อมที่จะพัฒนาเว็บไซต์ให้กับคุณด้วยความรู้ใน HTML, CSS,
+                    JavaScript, Bootstrap
                     และ
                     React
                     เพื่อสร้างผลงานที่มีประสิทธิภาพและตอบโจทย์ความต้องการของคุณ</p>
+                <p class="lead mb-5 mt-5" id="heroDescEn" style="display:none;">Ready to develop websites for you with
+                    knowledge in HTML, CSS, JavaScript, Bootstrap and React to create high-performance work that meets
+                    your needs.</p>
                 <p class="mb-5 mt-5 text-center mx-auto">
                     <i class="fa-brands fa-html5 display-1 px-5 mb-5"></i>
                     <i class="fa-brands fa-css3-alt display-1 px-5 mb-5"></i>
@@ -105,7 +115,7 @@
             </div>
             <div class="row gy-4 gy-lg-0 d-flex justify-content-center mt-5">
                 <div class="aboutContent">
-                    <p class="lead">
+                    <p class="lead" id="aboutDescThai">
                         สวัสดีครับ ผมชื่อ <span>นายกรพัฒน์ สิทธิชูรักษ์</span> ชื่อเล่น <span>ทู</span>
                         มีความรู้พื้นฐานในการใช้งาน HTML, CSS,
                         JavaScript, Bootstrap และ React ซึ่งช่วยให้ผมสามารถพัฒนาและออกแบบเว็บไซต์ได้อย่างมีประสิทธิภาพ
@@ -117,6 +127,21 @@
                         มาประยุกต์ใช้ในการทำงาน เพื่อลดระยะเวลาการทำงานและเพิ่มประสิทธิภาพได้อย่างดีเยี่ยม
                         นอกจากทักษะทางด้านเทคโนโลยีแล้ว ผมยังมีทักษะด้านดนตรี โดยเฉพาะการเล่นกีตาร์และการร้องเพลง
                         ซึ่งเป็นสิ่งที่ผมทำเพื่อความสนุกและผ่อนคลาย ยินดีที่ได้รู้จักครับ
+                    </p>
+                    <!-- English content -->
+                    <p class="lead" id="aboutDescEn" style="display:none;">
+                        Hello, my name is <span>Korrapat Sittichuruk</span>, my nickname is <span>Two</span>.
+                        I have a basic knowledge of HTML, CSS, JavaScript, Bootstrap and React, which allows me to
+                        develop and design websites effectively.
+                        In addition, I possess the ability to research information and apply it appropriately to my
+                        work.
+                        I also have skills in analyzing and utilizing data from various sources to improve work
+                        efficiency.
+                        I am an enthusiastic learner and constantly seek to improve my skills. I am also able to apply
+                        AI to work, which helps reduce work time and increase productivity.
+                        Besides my technology skills, I also have a talent for music, particularly playing the guitar
+                        and singing, which I do for fun and relaxation.
+                        It is a pleasure to meet you!
                     </p>
                 </div>
             </div>
@@ -142,11 +167,17 @@
                                     <div class="lineY mt-3"></div>
                                 </div>
                             </div>
-                            <div class="educationDetails ms-5">
+                            <div class="educationDetails ms-5" id="VocEducationThai">
                                 <h4 class="lead">วิทยาลัยอาชีวศึกษา สุพรรณบุรี (2013 - 2015)</h4>
                                 <p class="lead mb-1">ประกาศนียบัตรวิชาชีพ (ปวช.) คณะพาณิชยกรรม
                                     สาขาการบัญชี</p>
-                                <span class="lead">(เกรดเฉลี่ย 2.43)</span> <i class="fa-solid fa-exclamation"></i>
+                                <span class="lead">(เกรดเฉลี่ยสะสม 2.43)</span> <i class="fa-solid fa-exclamation"></i>
+                            </div>
+                            <div class="educationDetails ms-5" id="VocEducationEn" style="display: none;">
+                                <h4 class="lead">Suphanuri Vocational College (2013 - 2015)</h4>
+                                <p class="lead mb-1">Vocational Certificate (Voc. Cert.) in Accounting, Faculty of
+                                    Commerce</p>
+                                <span class="lead">(GPAX 2.43)</span> <i class="fa-solid fa-exclamation"></i>
                             </div>
                         </div>
                         <div class="educationItem d-flex align-items-start justify-content-start mt-5">
@@ -156,11 +187,18 @@
                                     <div class="lineY mt-3"></div>
                                 </div>
                             </div>
-                            <div class="educationDetails ms-5">
+                            <div class="educationDetails ms-5" id="HighEducationThai">
                                 <h4 class="lead">วิทยาลัยอาชีวศึกษา สุพรรณบุรี (2016 - 2018)</h4>
                                 <p class="lead mb-1">ประกาศนียบัตรวิชาชีพขั้นสูง (ปวส.)
                                     คณะบริหารธุรกิจ สาขาการบัญชี</p>
-                                <span class="lead">(เกรดเฉลี่ย 3.14)</span>
+                                <span class="lead">(เกรดเฉลี่ยสะสม 3.14)</span>
+                                <i class="fa-solid fa-plane-up arrow-up"></i>
+                            </div>
+                            <div class="educationDetails ms-5" id="HighEducationEn" style="display: none;">
+                                <h4 class="lead">Suphanuri Vocational College (2016 - 2018)</h4>
+                                <p class="lead mb-1">High Vocational Certificate (High Voc. Cert.) in Accounting,
+                                    Business Administration</p>
+                                <span class="lead">(GPAX 3.14)</span>
                                 <i class="fa-solid fa-plane-up arrow-up"></i>
                             </div>
                         </div>
@@ -189,11 +227,18 @@
                                     <div class="lineY mt-3"></div>
                                 </div>
                             </div>
-                            <div class="workDetails ms-5">
+                            <div class="workDetails ms-5" id="workThai">
                                 <h4 class="lead">บริษัท กราเวียร์ ปริ้นแพ็ค จำกัด (2022 - ปัจจุบัน)</h4>
                                 <p class="lead mb-1">ตำแหน่ง : พนังงาน/เสมียน</p>
                                 <span class="lead">หน้าที่รับผิดชอบ : จัดส่งสินค้า ลงบันทึกบัญชี เช็คสค๊อค
                                     และงานอื่นๆ ตามที่ได้รับมอบหมาย
+                                </span> <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="workDetails ms-5" id="workEn" style="display: none;">
+                                <h4 class="lead">Gravia Printpack Co.,Ltd. (2022 - Now)</h4>
+                                <p class="lead mb-1">Position : Clerk/Office Staff</p>
+                                <span class="lead">Responsibilities : Product delivery, bookkeeping, stock checking, and
+                                    other tasks as assigned.
                                 </span> <i class="fa-solid fa-briefcase"></i>
                             </div>
                         </div>
@@ -216,7 +261,8 @@
                 <div class="skillContent">
                     <div class="skillItem d-flex align-items-start justify-content-start">
                         <div class="skillDetails">
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 py-5">
+                            <!-- Skill Thai -->
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 py-5" id="skillThai">
                                 <div class="col d-flex align-items-start">
                                     <i class="fa-solid fa-seedling fs-4 me-3"></i>
                                     <div>
@@ -263,6 +309,58 @@
                                     <div>
                                         <h3 class="lead mb-0 fs-5">Musical Skills</h3>
                                         <p class="lead mb-0">มีทักษะการเล่นกีตาร์และร้องเพลง</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skill English -->
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 py-5" id="skillEn"
+                                style="display: none;">
+                                <div class="col d-flex align-items-start">
+                                    <i class="fa-solid fa-seedling fs-4 me-3"></i>
+                                    <div>
+                                        <h3 class="lead mb-0 fs-5">Web Development</h3>
+                                        <p class="lead mb-0">Basic expertise in using HTML, CSS, JavaScript, Bootstrap,
+                                            and React.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <i class="fa-solid fa-seedling fs-4 me-3"></i>
+                                    <div>
+                                        <h3 class="lead mb-0 fs-5">AI Integration</h3>
+                                        <p class="lead mb-0">Ability to apply AI to enhance workflow efficiency and
+                                            reduce time spent on tasks.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <i class="fa-solid fa-seedling fs-4 me-3"></i>
+                                    <div>
+                                        <h3 class="lead mb-0 fs-5">Research Skills</h3>
+                                        <p class="lead mb-0">Ability to research and apply information effectively to
+                                            tasks.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <i class="fa-solid fa-seedling fs-4 me-3"></i>
+                                    <div>
+                                        <h3 class="lead mb-0 fs-5">Data Analysis</h3>
+                                        <p class="lead mb-0">Ability to analyze and apply data from various sources in
+                                            work processes.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <i class="fa-solid fa-seedling fs-4 me-3"></i>
+                                    <div>
+                                        <h3 class="lead mb-0 fs-5">Continuous Learning</h3>
+                                        <p class="lead mb-0">Enthusiastic about research and learning to develop skills
+                                            and enhance personal potential.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <i class="fa-solid fa-seedling fs-4 me-3"></i>
+                                    <div>
+                                        <h3 class="lead mb-0 fs-5">Musical Skills</h3>
+                                        <p class="lead mb-0">Skilled in playing guitar and singing.</p>
                                     </div>
                                 </div>
                             </div>
@@ -340,6 +438,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Link to about.js -->
+    <script src="JS/about.js"></script>
 </body>
 
 </html>
